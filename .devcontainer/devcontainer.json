@@ -1,0 +1,18 @@
+{
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu24.04",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/starship:1": {},
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "fill-labs.dependi",
+        "tamasfe.even-better-toml",
+        "rust-lang.rust-analyzer"
+      ]
+    }
+  },
+  "postCreateCommand": ".devcontainer/post_create.sh"
+}
