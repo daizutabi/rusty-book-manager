@@ -14,5 +14,8 @@
       ]
     }
   },
-  "postCreateCommand": ".devcontainer/post_create.sh"
+  "postCreateCommand": ".devcontainer/post_create.sh",
+  "runArgs": [
+    "--add-host=host.docker.internal:host-gateway"
+  ]
 }
